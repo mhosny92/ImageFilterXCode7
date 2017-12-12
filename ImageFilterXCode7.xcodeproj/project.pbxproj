@@ -12,6 +12,8 @@
 		524688611FCD968E00CD8941 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5246885F1FCD968E00CD8941 /* Main.storyboard */; };
 		524688631FCD968E00CD8941 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524688621FCD968E00CD8941 /* Assets.xcassets */; };
 		524688661FCD968E00CD8941 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524688641FCD968E00CD8941 /* LaunchScreen.storyboard */; };
+		5246886F1FCE250300CD8941 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246886D1FCE250300CD8941 /* ImageProcessor.swift */; };
+		524688701FCE250300CD8941 /* RGBAImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5246886E1FCE250300CD8941 /* RGBAImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		524688621FCD968E00CD8941 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		524688651FCD968E00CD8941 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524688671FCD968E00CD8941 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5246886D1FCE250300CD8941 /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		5246886E1FCE250300CD8941 /* RGBAImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBAImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				524688621FCD968E00CD8941 /* Assets.xcassets */,
 				524688641FCD968E00CD8941 /* LaunchScreen.storyboard */,
 				524688671FCD968E00CD8941 /* Info.plist */,
+				5246886D1FCE250300CD8941 /* ImageProcessor.swift */,
+				5246886E1FCE250300CD8941 /* RGBAImage.swift */,
 			);
 			path = ImageFilterXCode7;
 			sourceTree = "<group>";
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					524688571FCD968E00CD8941 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = N984SN7FX9;
 					};
 				};
 			};
@@ -136,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5246885E1FCD968E00CD8941 /* ViewController.swift in Sources */,
+				524688701FCE250300CD8941 /* RGBAImage.swift in Sources */,
+				5246886F1FCE250300CD8941 /* ImageProcessor.swift in Sources */,
 				5246885C1FCD968E00CD8941 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,10 +258,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ImageFilterXCode7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.hosny.ImageFilterXCode7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +272,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ImageFilterXCode7/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mahmoud.hosny.ImageFilterXCode7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +301,7 @@
 				5246886C1FCD968E00CD8941 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
